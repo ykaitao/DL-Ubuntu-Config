@@ -29,7 +29,7 @@ def LogisticRegression(input_shape=None, activation='softmax', num_classes=10):
     
 if __name__ == '__main__':
     # Load data
-    data_file = r'mnist.pkl.gz'
+    data_file = r'../mnist.pkl.gz'
     train_set, valid_set, test_set = load_data(data_file)
     print(train_set[0].shape,train_set[1].shape)
     
