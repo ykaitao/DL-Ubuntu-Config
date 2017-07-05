@@ -1,5 +1,4 @@
 cp .theanorc ~
-sudo dpkg -i cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64.deb
-sudo apt-get update
-sudo apt-get install cuda
-
+sudo echo 'PATH=/usr/local/cuda/bin${PATH:+:${PATH}}' >> ~/.bashrc
+sudo echo 'LD_LIBRARY_PATH=/usr/local/cuda/lib64:/usr/lib/x86_64-linux-gnu${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}' >> ~/.bashrc
+source ~/.bashrc
