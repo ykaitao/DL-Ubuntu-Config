@@ -1,10 +1,9 @@
-# sudo apt-get purge nvidia*
+sudo apt-get purge nvidia*
 sudo dpkg -i cuda-repo-ubuntu*.deb
 sudo apt-get update
 sudo apt-get install cuda
 
-# sudo apt-get install nvidia-340
-# sudo apt-get install nvidia-331
+sudo dpkg -i libcudnn*.deb
 
 sudo apt-get install python-pycuda # for python2
 sudo apt-get install python3-pycuda # for python3
